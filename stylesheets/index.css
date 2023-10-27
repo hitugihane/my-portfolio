@@ -66,7 +66,7 @@ a{
   margin-block-start: 4vh;
   margin-block-end: 4vh;
 }
-#PROFILE,#WORKS{
+#PROFILE,#WORKS,#SKILL,#CONTACT{
   text-align: center;
 }
 .maincontent {
@@ -185,6 +185,17 @@ a{
   left: 36px;
   width:286.5px;
   font-size: 18px;
+  color: #171D3F;
+}
+.con{
+  top:36px;
+  position: relative;
+  left: 36px;
+  width:768px;
+  font-size: 18px;
+  color: #171D3F;
+}
+.minicon a{
   color: #171D3F;
 }
 .works-minicon{
