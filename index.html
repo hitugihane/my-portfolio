@@ -10,53 +10,147 @@
 </head>
 
 <body>
- 
+
   <div class="fixed-header">
     <span><a href="#PROFILE">PROFILE</a></span>
-    <span>WORKS</span>
-    <span>SKILL</span>
-    <span>CONTACT</span>
+    <span><a href="#WORKS">WORKS</a></span>
+    <span><a href="#SKILL">SKILL</a></span>
+    <span><a href="#CONTACT">CONTACT</a></span>
   </div>
   <div class="nollcontent1">a</div>
   <div class="fullscreen-bg"></div>
   <div class="contents">
     <!-- その他のコンテンツを追加してください -->
+    <h1 id="PROFILE">PROFILE</h1>
     <div class="content">
-      <h1 id="PROFILE">PROFILE</h1>
-      <div class="maincontent">
-        <div class="myicon"></div>
-        <h6 class="lastname">Aoki</h6>
-        <h6 class="firstname">Kakeru</h6>
-        <h3 class="name">青木 翔</h3>
+      <div class="mcon">
+        <div class="maincontent">
+          <div class="myicon"></div>
+          <h6 class="lastname">Aoki</h6>
+          <h6 class="firstname">Kakeru</h6>
+          <h6 class="name">青木 翔</h6>
+        </div>
       </div>
     </div>
+
     <div class="content">
       <div class="subcontent">
-        <div class="subcontent1"> </div>
-        <div class="subcontent2"> </div>
+        <div class="subcontent1">
+          <div class="minicon">
+            <h4>学校名：神奈川工科大学</h4>
+            <h4>学部/学科：情報学部情報工学科</h4>
+            <h4>卒業見込み：2025年</h4>
+          </div>
+        </div>
+        <div class="subcontent2">
+          <div class="minicon">
+            <h4>キャリア</h4>
+            <h4>開発が好きで複数回ハッカソンに出場、深く開発に携われる仕事に就きたいと考えています。</h4>
+          </div>
+        </div>
       </div>
     </div>
+
     <div class="content">
       <div class="subcontent">
-        <div class="subcontent1"> </div>
-        <div class="subcontent2"> </div>
+        <div class="subcontent1">
+          <div class="minicon">
+            <h4>アピールポイント１</h4>
+            <h4>大学で総勢１８０人の学生支援団「KAITpia」のマネジャーを行っています。</h4>
+          </div>
+        </div>
+        <div class="subcontent2">
+          <div class="minicon">
+            <h4>アピールポイント２</h4>
+            <h4>法政大学、京都橘大学、はこだて未来大学、神奈川工科大学の4大学合同PBLで大学リーダー</h4>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+  <div class="content">
+    <div class="subcontent">
+      <div class="subcontent1">
+        <div class="minicon">
+          <h4>アピールポイント３</h4>
+          <h4>インカレイベント運営サークル「AniRing」でボードゲームやBBQなのど企画・運営</h4>
+        </div>
+      </div>
+      <div class="subcontent2">
+        <div class="minicon">
+          <h4>アピールポイント４</h4>
+          <h4>これまでに6度のハッカソンへの参加経験があり、知識や経験を積み重ねてきました。</h4>
+        </div>
+      </div>
+    </div>
   </div>
-  <script>// 背景の要素を取得
+
+
+
+
+
+
+  <h1 id="WORKS">WORKS</h1>
+
+
+  <div class="content">
+    <a href="https://github.com/Hackathon-kait/mogra">
+      <div class="works-subcontent">
+        <div class="mogra-demo"></div>
+        <div class="subcontent2">
+          <div class="works-minicon">
+            <h4>アプリ名：MOGRA</h4>
+            <h4>　就活に悩む大学生をターゲットとして、モチベーショングラフの作成支援によって 自己分析を円滑を進めることを目的に開発を行った。</h4>
+            <h4>主な使用技術<br>　Django,JavaScript</h4>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="content">
+    <a href="https://github.com/Hackathon-kait/mogra">
+      <div class="works-subcontent">
+        <div class="mogra-demo"></div>
+        <div class="subcontent2">
+          <div class="works-minicon">
+            <h4>アプリ名：MOGRA</h4>
+            <h4>　就活に悩む大学生をターゲットとして、モチベーショングラフの作成支援によって 自己分析を円滑を進めることを目的に開発を行った。</h4>
+            <h4>主な使用技術<br>　Django,JavaScript</h4>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="content">
+    <a href="https://github.com/Hackathon-kait/mogra">
+      <div class="works-subcontent">
+        <div class="mogra-demo"></div>
+        <div class="subcontent2">
+          <div class="works-minicon">
+            <h4>アプリ名：MOGRA</h4>
+            <h4>　就活に悩む大学生をターゲットとして、モチベーショングラフの作成支援によって 自己分析を円滑を進めることを目的に開発を行った。</h4>
+            <h4>主な使用技術<br>　Django,JavaScript</h4>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+
+  <!-- <script>// 背景の要素を取得
     const fullscreenBg = document.querySelector('.fullscreen-bg');
-    
+
     // スクロールイベントリスナーを追加
-    window.addEventListener('scroll', function() {
-        // スクロール位置が一定量以上になったら
-        if (window.scrollY > 10) { // 10px 以上スクロールされたら
-            fullscreenBg.classList.add('hide-image'); // 背景をフェードアウト
-        } else {
-            fullscreenBg.classList.remove('hide-image'); // フェードアウトを解除
-        }
+    window.addEventListener('scroll', function () {
+      // スクロール位置が一定量以上になったら
+      if (window.scrollY > 10) { // 10px 以上スクロールされたら
+        fullscreenBg.classList.add('hide-image'); // 背景をフェードアウト
+      } else {
+        fullscreenBg.classList.remove('hide-image'); // フェードアウトを解除
+      }
     });
-    </script>
+  </script> -->
 </body>
 
 </html>
