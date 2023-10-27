@@ -1,18 +1,205 @@
-body{
+body {
+  width: 100%;
   margin: 0;
   padding: 0;
   height: 100%;
+  background-color: #EEF3F6;
+}
+h1{
+  padding-top: 10vh;
+}
+.fixed-header {
+  width: 100%;
+  height: 10vh;
+  /* ヘッダーの高さを指定 */
+  background-color: #171D3F;
+  color: white;
+  text-align: center;
+  line-height: 60px;
+  /* テキストを中央に配置 */
+  position: fixed;
+  /* 位置を固定 */
+  top: 0;
+  /* 上端からの距離を0に */
+  left: 0;
+  /* 左端からの距離を0に */
+  z-index: 1000;
+  /* 他の要素より前面に表示 */
+}
+
+.fixed-header span {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 189px;
+  height: 10vh;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Inter;
+  font-size: 5vh;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 10vh;
+}
+a{
+  color: #FFF;
+}
+.contents{
+
 }
 .fullscreen-bg {
-  position: relative;
+  position: absolute;
   width: 100%;
-  height: 100vh; /* ビューポートの高さに合わせてサイズを設定 */
-  background-image: url('../img/hituzi.jpg');
+  height: 90vh; 
+  background-image: url('../img/back-img.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  transition: opacity 0s; /* 0.3秒でのフェードアウト効果 */
+  opacity: 1;
+  z-index: 1000; /* 他の要素より前面に表示 */
 }
+.hide-image {
+  opacity: 0 !important; /* 画像を完全に透明にする */
+}
+
+
+
 .content {
-  padding: 20px;
+  width: 100%;
   text-align: center;
+  margin-block-start: 8vh;
+  margin-block-end: 8vh;
+}
+
+.maincontent {
+  margin: 0 auto;
+  width: 768px;
+  height: 384px;
+  border-radius: 16px;
+  background-color: #FFF;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.50));
+  animation: yurayura 2s linear infinite;
+}
+.subcontent {
+  margin: 0 auto;
+  width: 768px;
+  height: 192px;
+  display: flex;
+  justify-content: space-between;
+  animation: yurayura 2s linear infinite;
+}
+.subcontent1 {
+  width: 358.5px;
+  height: 192px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: #FFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50);
+}
+
+.subcontent2 {
+  width: 358.5px;
+  height: 192px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: #FFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50);
+}
+
+.lastname {
+  margin: 0 auto;
+  position: absolute;
+  display: flex;
+  top: 49px;
+  left: 119px;
+  width: 146px;
+  height: 57px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #000;
+  text-align: center;
+  font-family: Abel;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: lighter;
+  line-height: normal;
+}
+
+.firstname {
+  margin: 0 auto;
+  position: absolute;
+  display: flex;
+  top: 49px;
+  left: 244px;
+  width: 146px;
+  height: 57px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #000;
+  text-align: center;
+  font-family: Abel;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: lighter;
+  line-height: normal;
+}
+
+.name {
+  margin: 0 auto;
+  position: absolute;
+  display: flex;
+  top: 78px;
+  left: 20px;
+  width: 439px;
+  height: 131px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #171D3F;
+  text-align: center;
+  font-family: Abel;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: lighter;
+  line-height: normal;
+}
+
+.myicon {
+  position: absolute;
+  background-image: url("../img/hituzi-3.png");
+  top: 28px;
+  left: 478px;
+  width: 192px;
+  height: 192px;
+  flex-shrink: 0;
+  width: 192px;
+  height: 192px;
+  flex-shrink: 0;
+}
+
+@keyframes yurayura {
+
+  0%,
+  100% {
+    transform: rotate(0.5deg);
+  }
+
+  50% {
+    transform: rotate(-0.5deg);
+  }
+}
+
+.nollcontent1 {
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  /* ビューポートの高さに合わせてサイズを設定 */
+  background-image: url('../img/back-img.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }

@@ -1,16 +1,62 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>青木 翔</title>
   <link href="stylesheets/index.css" rel="stylesheet" type="text/css" media="all">
+
 </head>
+
 <body>
+ 
+  <div class="fixed-header">
+    <span><a href="#PROFILE">PROFILE</a></span>
+    <span>WORKS</span>
+    <span>SKILL</span>
+    <span>CONTACT</span>
+  </div>
+  <div class="nollcontent1">a</div>
   <div class="fullscreen-bg"></div>
-  <div class="content">
-    <h1>ここからが他のコンテンツです</h1>
+  <div class="contents">
     <!-- その他のコンテンツを追加してください -->
-</div>
+    <div class="content">
+      <h1 id="PROFILE">PROFILE</h1>
+      <div class="maincontent">
+        <div class="myicon"></div>
+        <h6 class="lastname">Aoki</h6>
+        <h6 class="firstname">Kakeru</h6>
+        <h3 class="name">青木 翔</h3>
+      </div>
+    </div>
+    <div class="content">
+      <div class="subcontent">
+        <div class="subcontent1"> </div>
+        <div class="subcontent2"> </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="subcontent">
+        <div class="subcontent1"> </div>
+        <div class="subcontent2"> </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script>// 背景の要素を取得
+    const fullscreenBg = document.querySelector('.fullscreen-bg');
+    
+    // スクロールイベントリスナーを追加
+    window.addEventListener('scroll', function() {
+        // スクロール位置が一定量以上になったら
+        if (window.scrollY > 10) { // 10px 以上スクロールされたら
+            fullscreenBg.classList.add('hide-image'); // 背景をフェードアウト
+        } else {
+            fullscreenBg.classList.remove('hide-image'); // フェードアウトを解除
+        }
+    });
+    </script>
 </body>
+
 </html>
