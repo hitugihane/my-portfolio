@@ -70,6 +70,7 @@ a{
   text-align: center;
 }
 .maincontent {
+  position: relative;
   margin: 0 auto;
   width: 768px;
   height: 248px;
